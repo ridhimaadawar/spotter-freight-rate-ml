@@ -21,8 +21,7 @@ Outputs: `validation_predictions.csv`, `data/december_chart_inputs_filled.csv`, 
   (handled with coordinate features instead of city IDs).
 - **Model:** LightGBM (L1 loss) on `log($/mile)` using distance, haversine distance, equipment, weight, coordinates, weekday.
   `market_index` and `quote_signal` are intentionally NOT used: they lowered out-of-time accuracy.
-- **Backtest MAE (clean loads):** about $47 vs $94 for a lane+equipment $/mile baseline.
-
+- **Backtest MAE (clean loads):** about 47 USD vs 94 USD for a lane+equipment per-mile baseline.
 Layout: `src/common.py` (cleaning + features), `src/train.py` (full pipeline), `src/experiments.py`, `src/exp2.py`, `src/exp3.py` (exploration).
 
 ## Data
