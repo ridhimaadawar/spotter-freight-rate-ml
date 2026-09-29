@@ -1,0 +1,16 @@
+fold,model,MAE,MAPE,R2
+Jan-Jun -> Jul-Aug,Baseline: equipment median $/mile,172.4056169461718,7.959742634458393,0.963932582357083
+Jan-Jun -> Jul-Aug,Baseline: lane+equipment median $/mile,100.72334340247112,4.277113516234501,0.9870533370420146
+Jan-Jun -> Jul-Aug,"LightGBM (chosen: log $/mi, L1, no market feats)",52.57036568474575,2.179179430415297,0.9967683591083825
+Jan-Jun -> Jul-Aug,LightGBM + market_index + quote_signal,65.68544565649462,2.911355291244103,0.9945228907398951
+Jan-Jun -> Jul-Aug,"Chosen model, scored incl. corrupted labels",104.55318139870587,4.435515058763395,0.8250032992324798
+Jan-Jul -> Aug-Sep,Baseline: equipment median $/mile,186.65955367177352,8.150311921949152,0.9576740892232276
+Jan-Jul -> Aug-Sep,Baseline: lane+equipment median $/mile,92.57618891832682,3.921388423885003,0.9888306743877244
+Jan-Jul -> Aug-Sep,"LightGBM (chosen: log $/mi, L1, no market feats)",44.8928661776383,1.886413086097382,0.9976111530147893
+Jan-Jul -> Aug-Sep,LightGBM + market_index + quote_signal,70.36822060088652,3.1144773162008694,0.994208678159815
+Jan-Jul -> Aug-Sep,"Chosen model, scored incl. corrupted labels",95.52813867915575,4.145623795616161,0.8327264399042225
+Jan-Aug -> Sep-Oct,Baseline: equipment median $/mile,175.09159008257723,8.091069931754562,0.9647630261835156
+Jan-Aug -> Sep-Oct,Baseline: lane+equipment median $/mile,88.15182877906418,3.741154988338121,0.9904530059120185
+Jan-Aug -> Sep-Oct,"LightGBM (chosen: log $/mi, L1, no market feats)",42.41600227025345,1.8148706088641282,0.9979224477355441
+Jan-Aug -> Sep-Oct,LightGBM + market_index + quote_signal,82.91082344661916,3.6064337697631337,0.993285143494891
+Jan-Aug -> Sep-Oct,"Chosen model, scored incl. corrupted labels",98.40576451332214,4.332812136172222,0.829230367775764
